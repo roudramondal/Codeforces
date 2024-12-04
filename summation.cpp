@@ -1,11 +1,20 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main ()
 {
-  long long n;
+  int n;
   cin >> n;
-  long long sum = n * (n + 1) / 2;
+  int a[n];
 
-  cout << sum << endl;
+  for (int i = 0; i < n;i++)
+  {
+    cin >> a[i];
+  }
+  long long sum3 = 0;
+  for (int i = 0; i < n;i++)
+  {
+    sum3 += (a[i]);
+  }
+  cout << abs(sum3) << endl;
   return 0;
 }
